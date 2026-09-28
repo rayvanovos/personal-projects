@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="backgroundGlow"></div>
+
+<div class="player">
+
+    <h1>Reactive Player</h1>
+
+    <div class="album">
+        <img src="images/tha playah.jpg" id="albumCover">
+    </div>
+
+    <h2 id="songTitle">Demo Song</h2>
+    <p id="artistName">Tha Playah</p>
+
+    <canvas id="visualizer"></canvas>
+
+    <audio 
+    id="audio" 
+    src="music/Neophyte  Tha Playah - Still Nr. 1 (Nosferatu Remix).mp3">
+    </audio>
+
+    <input
+        type="range"
+        id="progress"
+        value="0"
+    >
+
+    <div class="controls">
+
+        <button id="prev">
+            ⏮
+        </button>
+
+        <button id="play">
+            ▶
+        </button>
+
+        <button id="next">
+            ⏭
+        </button>
+
+    </div>
+
+    <div class="volume">
+
+        🔊
+
+        <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1">
+
+    </div>
+
+</div>
+
+<script src="js/player.js"></script>
+<script src="js/visualizer.js"></script>
+<script src="js/effects.js"></script>
+
+</body>
+</html>
